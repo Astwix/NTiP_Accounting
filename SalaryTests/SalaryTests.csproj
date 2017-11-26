@@ -54,8 +54,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="HourlyWageTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MonthlyWageTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

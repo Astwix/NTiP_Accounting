@@ -12,3 +12,6 @@ D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsF
 D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.MainForm.resources
 D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\Newtonsoft.Json.dll
 D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\Newtonsoft.Json.xml
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Debug\SalaryWindowsFormsView.exe.config
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.pdb
