@@ -1,0 +1,14 @@
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\SalaryWindowsFormsView.exe.config
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\SalaryWindowsFormsView.exe
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\SalaryWindowsFormsView.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.csprojResolveAssemblyReference.cache
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.Properties.Resources.resources
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.csproj.GenerateResource.Cache
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.exe
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\SalaryModel.dll
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\SalaryModel.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.AddForm.resources
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.MainForm.resources
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\Newtonsoft.Json.dll
+D:\University\7\NTiP\lab1\Salary\SalaryWindowsFormsView\bin\Debug\Newtonsoft.Json.xml

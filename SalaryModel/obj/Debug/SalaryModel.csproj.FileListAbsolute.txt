@@ -1,0 +1,5 @@
+D:\University\7\NTiP\lab1\Salary\SalaryModel\obj\Debug\SalaryModel.csprojResolveAssemblyReference.cache
+D:\University\7\NTiP\lab1\Salary\SalaryModel\bin\Debug\SalaryModel.dll
+D:\University\7\NTiP\lab1\Salary\SalaryModel\bin\Debug\SalaryModel.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryModel\obj\Debug\SalaryModel.dll
+D:\University\7\NTiP\lab1\Salary\SalaryModel\obj\Debug\SalaryModel.pdb

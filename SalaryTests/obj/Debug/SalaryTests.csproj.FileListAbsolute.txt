@@ -1,0 +1,9 @@
+D:\University\7\NTiP\lab1\Salary\SalaryTests\bin\Debug\SalaryTests.dll
+D:\University\7\NTiP\lab1\Salary\SalaryTests\bin\Debug\SalaryTests.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryTests\obj\Debug\SalaryTests.dll
+D:\University\7\NTiP\lab1\Salary\SalaryTests\obj\Debug\SalaryTests.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryTests\bin\Debug\nunit.framework.dll
+D:\University\7\NTiP\lab1\Salary\SalaryTests\bin\Debug\nunit.framework.xml
+D:\University\7\NTiP\lab1\Salary\SalaryTests\obj\Debug\SalaryTests.csprojResolveAssemblyReference.cache
+D:\University\7\NTiP\lab1\Salary\SalaryTests\bin\Debug\SalaryModel.dll
+D:\University\7\NTiP\lab1\Salary\SalaryTests\bin\Debug\SalaryModel.pdb

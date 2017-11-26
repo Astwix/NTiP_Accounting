@@ -1,0 +1,8 @@
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\bin\Debug\SalaryConsoleView.exe.config
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\bin\Debug\SalaryConsoleView.exe
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\bin\Debug\SalaryConsoleView.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\bin\Debug\SalaryModel.dll
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\bin\Debug\SalaryModel.pdb
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\obj\Debug\SalaryConsoleView.csprojResolveAssemblyReference.cache
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\obj\Debug\SalaryConsoleView.exe
+D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\obj\Debug\SalaryConsoleView.pdb
