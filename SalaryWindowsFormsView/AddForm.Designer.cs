@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.MonthlyWageGroupBox = new System.Windows.Forms.GroupBox();
-            this.RewardTextBox = new System.Windows.Forms.TextBox();
-            this.RateTextBox = new System.Windows.Forms.TextBox();
-            this.BountyCheckBox = new System.Windows.Forms.CheckBox();
-            this.BountyTextBox = new System.Windows.Forms.TextBox();
-            this.RateLabel = new System.Windows.Forms.Label();
-            this.RewardLabel = new System.Windows.Forms.Label();
             this.HourlyWageGroupBox = new System.Windows.Forms.GroupBox();
-            this.HoursWorkedTextBox = new System.Windows.Forms.TextBox();
-            this.HoursWorkedLabel = new System.Windows.Forms.Label();
-            this.HourPriceTextBox = new System.Windows.Forms.TextBox();
             this.HourPriceLabel = new System.Windows.Forms.Label();
+            this.HourPriceTextBox = new System.Windows.Forms.TextBox();
+            this.HoursWorkedLabel = new System.Windows.Forms.Label();
+            this.HoursWorkedTextBox = new System.Windows.Forms.TextBox();
+            this.MonthlyWageGroupBox = new System.Windows.Forms.GroupBox();
+            this.RewardLabel = new System.Windows.Forms.Label();
+            this.RateLabel = new System.Windows.Forms.Label();
+            this.BountyTextBox = new System.Windows.Forms.TextBox();
+            this.BountyCheckBox = new System.Windows.Forms.CheckBox();
+            this.RateTextBox = new System.Windows.Forms.TextBox();
+            this.RewardTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.HourlyWageRadioButton = new System.Windows.Forms.RadioButton();
             this.MonthlyWageRadioButton = new System.Windows.Forms.RadioButton();
+            this.HourlyWageRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.SurnameTextBox = new System.Windows.Forms.TextBox();
-            this.FirstnameTextBox = new System.Windows.Forms.TextBox();
-            this.SurnameLabel = new System.Windows.Forms.Label();
             this.FirstnameLabel = new System.Windows.Forms.Label();
+            this.SurnameLabel = new System.Windows.Forms.Label();
+            this.FirstnameTextBox = new System.Windows.Forms.TextBox();
+            this.SurnameTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.OKButton = new System.Windows.Forms.Button();
             this.CancelAddButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2.SuspendLayout();
-            this.MonthlyWageGroupBox.SuspendLayout();
             this.HourlyWageGroupBox.SuspendLayout();
+            this.MonthlyWageGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -74,9 +74,56 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 223F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 197F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(459, 197);
             this.tableLayoutPanel2.TabIndex = 23;
+            // 
+            // HourlyWageGroupBox
+            // 
+            this.HourlyWageGroupBox.Controls.Add(this.HourPriceLabel);
+            this.HourlyWageGroupBox.Controls.Add(this.HourPriceTextBox);
+            this.HourlyWageGroupBox.Controls.Add(this.HoursWorkedLabel);
+            this.HourlyWageGroupBox.Controls.Add(this.HoursWorkedTextBox);
+            this.HourlyWageGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HourlyWageGroupBox.Location = new System.Drawing.Point(3, 3);
+            this.HourlyWageGroupBox.MinimumSize = new System.Drawing.Size(0, 70);
+            this.HourlyWageGroupBox.Name = "HourlyWageGroupBox";
+            this.HourlyWageGroupBox.Size = new System.Drawing.Size(223, 191);
+            this.HourlyWageGroupBox.TabIndex = 19;
+            this.HourlyWageGroupBox.TabStop = false;
+            this.HourlyWageGroupBox.Text = "Hourly Wage";
+            // 
+            // HourPriceLabel
+            // 
+            this.HourPriceLabel.AutoSize = true;
+            this.HourPriceLabel.Location = new System.Drawing.Point(6, 19);
+            this.HourPriceLabel.Name = "HourPriceLabel";
+            this.HourPriceLabel.Size = new System.Drawing.Size(73, 13);
+            this.HourPriceLabel.TabIndex = 6;
+            this.HourPriceLabel.Text = "Price per hour";
+            // 
+            // HourPriceTextBox
+            // 
+            this.HourPriceTextBox.Location = new System.Drawing.Point(91, 16);
+            this.HourPriceTextBox.Name = "HourPriceTextBox";
+            this.HourPriceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.HourPriceTextBox.TabIndex = 13;
+            // 
+            // HoursWorkedLabel
+            // 
+            this.HoursWorkedLabel.AutoSize = true;
+            this.HoursWorkedLabel.Location = new System.Drawing.Point(6, 45);
+            this.HoursWorkedLabel.Name = "HoursWorkedLabel";
+            this.HoursWorkedLabel.Size = new System.Drawing.Size(73, 13);
+            this.HoursWorkedLabel.TabIndex = 7;
+            this.HoursWorkedLabel.Text = "Hours worked";
+            // 
+            // HoursWorkedTextBox
+            // 
+            this.HoursWorkedTextBox.Location = new System.Drawing.Point(91, 42);
+            this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
+            this.HoursWorkedTextBox.Size = new System.Drawing.Size(100, 20);
+            this.HoursWorkedTextBox.TabIndex = 14;
             // 
             // MonthlyWageGroupBox
             // 
@@ -94,19 +141,30 @@
             this.MonthlyWageGroupBox.TabStop = false;
             this.MonthlyWageGroupBox.Text = "Monthly Wage";
             // 
-            // RewardTextBox
+            // RewardLabel
             // 
-            this.RewardTextBox.Location = new System.Drawing.Point(98, 19);
-            this.RewardTextBox.Name = "RewardTextBox";
-            this.RewardTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RewardTextBox.TabIndex = 15;
+            this.RewardLabel.AutoSize = true;
+            this.RewardLabel.Location = new System.Drawing.Point(6, 22);
+            this.RewardLabel.Name = "RewardLabel";
+            this.RewardLabel.Size = new System.Drawing.Size(44, 13);
+            this.RewardLabel.TabIndex = 8;
+            this.RewardLabel.Text = "Reward";
             // 
-            // RateTextBox
+            // RateLabel
             // 
-            this.RateTextBox.Location = new System.Drawing.Point(98, 45);
-            this.RateTextBox.Name = "RateTextBox";
-            this.RateTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RateTextBox.TabIndex = 16;
+            this.RateLabel.AutoSize = true;
+            this.RateLabel.Location = new System.Drawing.Point(6, 48);
+            this.RateLabel.Name = "RateLabel";
+            this.RateLabel.Size = new System.Drawing.Size(30, 13);
+            this.RateLabel.TabIndex = 9;
+            this.RateLabel.Text = "Rate";
+            // 
+            // BountyTextBox
+            // 
+            this.BountyTextBox.Location = new System.Drawing.Point(98, 71);
+            this.BountyTextBox.Name = "BountyTextBox";
+            this.BountyTextBox.Size = new System.Drawing.Size(100, 20);
+            this.BountyTextBox.TabIndex = 17;
             // 
             // BountyCheckBox
             // 
@@ -119,77 +177,19 @@
             this.BountyCheckBox.UseVisualStyleBackColor = true;
             this.BountyCheckBox.CheckedChanged += new System.EventHandler(this.BountyCheckBox_CheckedChanged);
             // 
-            // BountyTextBox
+            // RateTextBox
             // 
-            this.BountyTextBox.Location = new System.Drawing.Point(98, 71);
-            this.BountyTextBox.Name = "BountyTextBox";
-            this.BountyTextBox.Size = new System.Drawing.Size(100, 20);
-            this.BountyTextBox.TabIndex = 17;
+            this.RateTextBox.Location = new System.Drawing.Point(98, 45);
+            this.RateTextBox.Name = "RateTextBox";
+            this.RateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.RateTextBox.TabIndex = 16;
             // 
-            // RateLabel
+            // RewardTextBox
             // 
-            this.RateLabel.AutoSize = true;
-            this.RateLabel.Location = new System.Drawing.Point(6, 48);
-            this.RateLabel.Name = "RateLabel";
-            this.RateLabel.Size = new System.Drawing.Size(30, 13);
-            this.RateLabel.TabIndex = 9;
-            this.RateLabel.Text = "Rate";
-            // 
-            // RewardLabel
-            // 
-            this.RewardLabel.AutoSize = true;
-            this.RewardLabel.Location = new System.Drawing.Point(6, 22);
-            this.RewardLabel.Name = "RewardLabel";
-            this.RewardLabel.Size = new System.Drawing.Size(44, 13);
-            this.RewardLabel.TabIndex = 8;
-            this.RewardLabel.Text = "Reward";
-            // 
-            // HourlyWageGroupBox
-            // 
-            this.HourlyWageGroupBox.Controls.Add(this.HourPriceLabel);
-            this.HourlyWageGroupBox.Controls.Add(this.HourPriceTextBox);
-            this.HourlyWageGroupBox.Controls.Add(this.HoursWorkedLabel);
-            this.HourlyWageGroupBox.Controls.Add(this.HoursWorkedTextBox);
-            this.HourlyWageGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HourlyWageGroupBox.Location = new System.Drawing.Point(3, 3);
-            this.HourlyWageGroupBox.MinimumSize = new System.Drawing.Size(0, 70);
-            this.HourlyWageGroupBox.Name = "HourlyWageGroupBox";
-            this.HourlyWageGroupBox.Size = new System.Drawing.Size(223, 191);
-            this.HourlyWageGroupBox.TabIndex = 19;
-            this.HourlyWageGroupBox.TabStop = false;
-            this.HourlyWageGroupBox.Text = "Hourly Wage";
-            // 
-            // HoursWorkedTextBox
-            // 
-            this.HoursWorkedTextBox.Location = new System.Drawing.Point(91, 42);
-            this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
-            this.HoursWorkedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.HoursWorkedTextBox.TabIndex = 14;
-            // 
-            // HoursWorkedLabel
-            // 
-            this.HoursWorkedLabel.AutoSize = true;
-            this.HoursWorkedLabel.Location = new System.Drawing.Point(6, 45);
-            this.HoursWorkedLabel.Name = "HoursWorkedLabel";
-            this.HoursWorkedLabel.Size = new System.Drawing.Size(73, 13);
-            this.HoursWorkedLabel.TabIndex = 7;
-            this.HoursWorkedLabel.Text = "Hours worked";
-            // 
-            // HourPriceTextBox
-            // 
-            this.HourPriceTextBox.Location = new System.Drawing.Point(91, 16);
-            this.HourPriceTextBox.Name = "HourPriceTextBox";
-            this.HourPriceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.HourPriceTextBox.TabIndex = 13;
-            // 
-            // HourPriceLabel
-            // 
-            this.HourPriceLabel.AutoSize = true;
-            this.HourPriceLabel.Location = new System.Drawing.Point(6, 19);
-            this.HourPriceLabel.Name = "HourPriceLabel";
-            this.HourPriceLabel.Size = new System.Drawing.Size(73, 13);
-            this.HourPriceLabel.TabIndex = 6;
-            this.HourPriceLabel.Text = "Price per hour";
+            this.RewardTextBox.Location = new System.Drawing.Point(98, 19);
+            this.RewardTextBox.Name = "RewardTextBox";
+            this.RewardTextBox.Size = new System.Drawing.Size(100, 20);
+            this.RewardTextBox.TabIndex = 15;
             // 
             // groupBox1
             // 
@@ -204,18 +204,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wage type";
             // 
-            // HourlyWageRadioButton
-            // 
-            this.HourlyWageRadioButton.AutoSize = true;
-            this.HourlyWageRadioButton.Location = new System.Drawing.Point(9, 19);
-            this.HourlyWageRadioButton.Name = "HourlyWageRadioButton";
-            this.HourlyWageRadioButton.Size = new System.Drawing.Size(55, 17);
-            this.HourlyWageRadioButton.TabIndex = 4;
-            this.HourlyWageRadioButton.TabStop = true;
-            this.HourlyWageRadioButton.Text = "Hourly";
-            this.HourlyWageRadioButton.UseVisualStyleBackColor = true;
-            this.HourlyWageRadioButton.CheckedChanged += new System.EventHandler(this.HourlyWageRadioButton_CheckedChanged);
-            // 
             // MonthlyWageRadioButton
             // 
             this.MonthlyWageRadioButton.AutoSize = true;
@@ -227,6 +215,18 @@
             this.MonthlyWageRadioButton.Text = "Monthly";
             this.MonthlyWageRadioButton.UseVisualStyleBackColor = true;
             this.MonthlyWageRadioButton.CheckedChanged += new System.EventHandler(this.MonthlyWageRadioButton_CheckedChanged);
+            // 
+            // HourlyWageRadioButton
+            // 
+            this.HourlyWageRadioButton.AutoSize = true;
+            this.HourlyWageRadioButton.Location = new System.Drawing.Point(9, 19);
+            this.HourlyWageRadioButton.Name = "HourlyWageRadioButton";
+            this.HourlyWageRadioButton.Size = new System.Drawing.Size(55, 17);
+            this.HourlyWageRadioButton.TabIndex = 4;
+            this.HourlyWageRadioButton.TabStop = true;
+            this.HourlyWageRadioButton.Text = "Hourly";
+            this.HourlyWageRadioButton.UseVisualStyleBackColor = true;
+            this.HourlyWageRadioButton.CheckedChanged += new System.EventHandler(this.HourlyWageRadioButton_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -243,20 +243,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Employee";
             // 
-            // SurnameTextBox
+            // FirstnameLabel
             // 
-            this.SurnameTextBox.Location = new System.Drawing.Point(243, 16);
-            this.SurnameTextBox.Name = "SurnameTextBox";
-            this.SurnameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SurnameTextBox.TabIndex = 3;
-            // 
-            // FirstnameTextBox
-            // 
-            this.FirstnameTextBox.Location = new System.Drawing.Point(64, 16);
-            this.FirstnameTextBox.Name = "FirstnameTextBox";
-            this.FirstnameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.FirstnameTextBox.TabIndex = 2;
-            this.FirstnameTextBox.TextChanged += new System.EventHandler(this.FirstnameTextBox_TextChanged);
+            this.FirstnameLabel.AutoSize = true;
+            this.FirstnameLabel.Location = new System.Drawing.Point(6, 21);
+            this.FirstnameLabel.Name = "FirstnameLabel";
+            this.FirstnameLabel.Size = new System.Drawing.Size(52, 13);
+            this.FirstnameLabel.TabIndex = 0;
+            this.FirstnameLabel.Text = "Firstname";
             // 
             // SurnameLabel
             // 
@@ -267,14 +261,20 @@
             this.SurnameLabel.TabIndex = 1;
             this.SurnameLabel.Text = "Surname";
             // 
-            // FirstnameLabel
+            // FirstnameTextBox
             // 
-            this.FirstnameLabel.AutoSize = true;
-            this.FirstnameLabel.Location = new System.Drawing.Point(6, 21);
-            this.FirstnameLabel.Name = "FirstnameLabel";
-            this.FirstnameLabel.Size = new System.Drawing.Size(52, 13);
-            this.FirstnameLabel.TabIndex = 0;
-            this.FirstnameLabel.Text = "Firstname";
+            this.FirstnameTextBox.Location = new System.Drawing.Point(64, 16);
+            this.FirstnameTextBox.Name = "FirstnameTextBox";
+            this.FirstnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.FirstnameTextBox.TabIndex = 2;
+            this.FirstnameTextBox.TextChanged += new System.EventHandler(this.FirstnameTextBox_TextChanged);
+            // 
+            // SurnameTextBox
+            // 
+            this.SurnameTextBox.Location = new System.Drawing.Point(243, 16);
+            this.SurnameTextBox.Name = "SurnameTextBox";
+            this.SurnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SurnameTextBox.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
@@ -335,10 +335,10 @@
             this.Text = "AddForm";
             this.Load += new System.EventHandler(this.AddForm_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.MonthlyWageGroupBox.ResumeLayout(false);
-            this.MonthlyWageGroupBox.PerformLayout();
             this.HourlyWageGroupBox.ResumeLayout(false);
             this.HourlyWageGroupBox.PerformLayout();
+            this.MonthlyWageGroupBox.ResumeLayout(false);
+            this.MonthlyWageGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -40,7 +40,8 @@ namespace SalaryModel.SalaryTypes
         /// <param name="bounty"></param>
         public MonthlyWage(string firstname, string surname, double reward, double rate, double bounty)
         {
-            if (!(Validator.Validator.ValidateString(firstname) && Validator.Validator.ValidateString(surname)))
+            if (!(Validator.Validator.ValidateString(firstname) 
+                && Validator.Validator.ValidateString(surname)))
             {
                 throw new ArgumentException();
             }
@@ -65,7 +66,7 @@ namespace SalaryModel.SalaryTypes
             get { return _reward; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value > 0)))
+                if (!(Validator.Validator.ValidateNumber(value) && (value > 7500) && (value <= 150000)))
                 {
                     throw new ArgumentException("Invalid reward");
                 }
@@ -86,7 +87,7 @@ namespace SalaryModel.SalaryTypes
             get { return rate; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value > 0)))
+                if (!(Validator.Validator.ValidateNumber(value) && (value > 0) && (value <= 2.5)))
                 {
                     throw new ArgumentException("Invalid rate");
                 }
@@ -105,8 +106,8 @@ namespace SalaryModel.SalaryTypes
         {
             get { return bounty; }
             set 
-            { 
-                if (!(Validator.Validator.ValidateNumber(value) && (value >= 0)))
+            {
+                if (!(Validator.Validator.ValidateNumber(value) && (value >= 0) && (value <= 50000)))
                 {
                     throw new ArgumentException("Invalid bounty");
                 }
