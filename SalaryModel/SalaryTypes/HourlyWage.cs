@@ -60,7 +60,8 @@ namespace SalaryModel.SalaryTypes
             get { return hourPrice; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value >= 0) && (value <= 1000)))
+                if (!(Validator.Validator.ValidateNumber(value) 
+                    && (value >= 0) && (value <= 1000)))
                 {
                     throw new ArgumentException("Invalid hourPrice");
                 }
@@ -79,7 +80,8 @@ namespace SalaryModel.SalaryTypes
             get { return hoursWorked; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value >= 80) && (value <= 300)))
+                if (!(Validator.Validator.ValidateNumber(value) 
+                    && (value >= 80) && (value <= 300)))
                 {
                     throw new ArgumentException("Invalid hoursWorked");
                 }

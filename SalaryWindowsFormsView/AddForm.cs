@@ -25,6 +25,7 @@ namespace SalaryWindowsFormsView
             FirstnameTextBox.KeyPress += new KeyPressEventHandler(IsString);
             SurnameTextBox.KeyPress += new KeyPressEventHandler(IsString);
             HoursWorkedTextBox.KeyPress += new KeyPressEventHandler(IsNumber);
+            OKButton.Select();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -36,7 +37,7 @@ namespace SalaryWindowsFormsView
         {
             try
             {
-                if (HourlyWageRadioButton.Checked == true)
+                if (HourlyWageRadioButton.Checked)
                 {
                     newStaff = new SalaryModel.SalaryTypes.HourlyWage(FirstnameTextBox.Text,
                         SurnameTextBox.Text, Convert.ToDouble(HourPriceTextBox.Text),

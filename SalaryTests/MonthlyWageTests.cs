@@ -13,7 +13,7 @@ namespace SalaryTests
             SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage(firstname, surname);
         }
 
-        [TestCase("Алексей", "Волконский", 1, 1, 1, TestName = "Monthly Wage 5 Params Constructor")]
+        [TestCase("Алексей", "Волконский", 10000, 2, 5000, TestName = "Monthly Wage 5 Params Constructor")]
         [Test]
         public void MonthlyWageConstructor5Params(string firstname, string surname, double rew, double rate, double bounty)
         {
@@ -47,7 +47,7 @@ namespace SalaryTests
             Assert.AreEqual(bounty, staff.Bounty);
         }
 
-        [TestCase(10, TestName = "Monthly Wage Set Rate")]
+        [TestCase(2, TestName = "Monthly Wage Set Rate")]
         [Test]
         public void MonthlyWageRateSet(double rate)
         {
@@ -56,7 +56,7 @@ namespace SalaryTests
             Assert.AreEqual(rate, staff.Rate);
         }
 
-        [TestCase(10, TestName = "Monthly Wage Set Reward")]
+        [TestCase(10000, TestName = "Monthly Wage Set Reward")]
         [Test]
         public void MonthlyWageRewardSet(double rew)
         {
@@ -98,11 +98,11 @@ namespace SalaryTests
             });
         }
 
-        [TestCase(1, TestName = "Monthly Wage Get Reward")]
+        [TestCase(10000, TestName = "Monthly Wage Get Reward")]
         [Test]
         public void MonthlyWageRewardGet(double rew)
         {
-            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 1, 2, 3);
+            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 10000, 2, 5000);
             Assert.AreEqual(rew, staff.Reward);
         }
 
@@ -110,15 +110,15 @@ namespace SalaryTests
         [Test]
         public void MonthlyWageRateGet(double rate)
         {
-            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 1, 2, 3);
+            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 10000, 2, 5000);
             Assert.AreEqual(rate, staff.Rate);
         }
 
-        [TestCase(3, TestName = "Monthly Wage Get Bounty")]
+        [TestCase(500, TestName = "Monthly Wage Get Bounty")]
         [Test]
         public void MonthlyWageBountyGet(double bounty)
         {
-            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 1, 2, 3);
+            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 10000, 2, 500);
             Assert.AreEqual(bounty, staff.Bounty);
         }
 
@@ -126,7 +126,7 @@ namespace SalaryTests
         [Test]
         public void MonthlyWageFirstnameGet(string firstname)
         {
-            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 1, 2, 3);
+            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 10000, 2, 500);
             Assert.AreEqual(firstname, staff.Firstname);
         }
 
@@ -134,7 +134,7 @@ namespace SalaryTests
         [Test]
         public void MonthlyWageSurnameGet(string surname)
         {
-            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 1, 2, 3);
+            SalaryModel.SalaryTypes.MonthlyWage staff = new SalaryModel.SalaryTypes.MonthlyWage("Алексей", "Волконский", 10000, 2, 500);
             Assert.AreEqual(surname, staff.Surname);
         }
     }

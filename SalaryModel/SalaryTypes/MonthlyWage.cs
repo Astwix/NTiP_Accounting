@@ -66,7 +66,8 @@ namespace SalaryModel.SalaryTypes
             get { return _reward; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value > 7500) && (value <= 150000)))
+                if (!(Validator.Validator.ValidateNumber(value) 
+                    && (value > 7500) && (value <= 150000)))
                 {
                     throw new ArgumentException("Invalid reward");
                 }
@@ -87,7 +88,8 @@ namespace SalaryModel.SalaryTypes
             get { return rate; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value > 0) && (value <= 2.5)))
+                if (!(Validator.Validator.ValidateNumber(value) 
+                    && (value > 0) && (value <= 2.5)))
                 {
                     throw new ArgumentException("Invalid rate");
                 }
@@ -107,7 +109,8 @@ namespace SalaryModel.SalaryTypes
             get { return bounty; }
             set 
             {
-                if (!(Validator.Validator.ValidateNumber(value) && (value >= 0) && (value <= 50000)))
+                if (!(Validator.Validator.ValidateNumber(value) 
+                    && (value >= 0) && (value <= 50000)))
                 {
                     throw new ArgumentException("Invalid bounty");
                 }

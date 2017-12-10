@@ -13,7 +13,7 @@ namespace SalaryTests
             SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage(firstname, surname);
         }
 
-        [TestCase("Алексей", "Волконский", 1, 1, TestName = "Hourly Wage 4 Params Constructor")]
+        [TestCase("Алексей", "Волконский", 100, 100, TestName = "Hourly Wage 4 Params Constructor")]
         [Test]
         public void HourlyWageConstructor4Params(string firstname, string surname, double hp, double hw)
         {
@@ -47,7 +47,7 @@ namespace SalaryTests
             Assert.AreEqual(hourprice, staff.HourPrice);
         }
 
-        [TestCase(10, TestName = "Hourly Wage Set HoursWorked")]
+        [TestCase(200, TestName = "Hourly Wage Set HoursWorked")]
         [Test]
         public void HourlyWageHoursWorkedSet(double hourworked)
         {
@@ -82,7 +82,7 @@ namespace SalaryTests
         [Test]
         public void HourlyWageFirstnameGet(string firstname)
         {
-            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 1, 2);
+            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 100, 100);
             Assert.AreEqual(firstname, staff.Firstname);
         }
 
@@ -90,23 +90,23 @@ namespace SalaryTests
         [Test]
         public void HourlyWageSurnameGet(string surname)
         {
-            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 1, 2);
+            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 100, 100);
             Assert.AreEqual(surname, staff.Surname);
         }
 
-        [TestCase(1, TestName = "Hourly Wage Get HourPrice")]
+        [TestCase(100, TestName = "Hourly Wage Get HourPrice")]
         [Test]
         public void HourlyWageHourPriceGet(double hourprice)
         {
-            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 1, 2);
+            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 100, 100);
             Assert.AreEqual(hourprice, staff.HourPrice);
         }
 
-        [TestCase(2, TestName = "Hourly Wage Get HoursWorked")]
+        [TestCase(200, TestName = "Hourly Wage Get HoursWorked")]
         [Test]
         public void HourlyWageHoursWorkedGet(double hourworked)
         {
-            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 1, 2);
+            SalaryModel.SalaryTypes.HourlyWage staff = new SalaryModel.SalaryTypes.HourlyWage("Алексей", "Волконский", 100, 200);
             Assert.AreEqual(hourworked, staff.HoursWorked);
         }
     }

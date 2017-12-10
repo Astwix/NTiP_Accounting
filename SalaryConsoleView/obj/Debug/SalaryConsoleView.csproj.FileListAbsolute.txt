@@ -6,3 +6,11 @@ D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\bin\Debug\SalaryModel.pdb
 D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\obj\Debug\SalaryConsoleView.csprojResolveAssemblyReference.cache
 D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\obj\Debug\SalaryConsoleView.exe
 D:\University\7\NTiP\lab1\Salary\SalaryConsoleView\obj\Debug\SalaryConsoleView.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Debug\SalaryConsoleView.exe.config
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Debug\SalaryConsoleView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Debug\SalaryConsoleView.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Debug\SalaryModel.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Debug\SalaryModel.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\obj\Debug\SalaryConsoleView.csprojResolveAssemblyReference.cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\obj\Debug\SalaryConsoleView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\obj\Debug\SalaryConsoleView.pdb

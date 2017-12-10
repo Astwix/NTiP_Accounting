@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.HourlyWageGroupBox = new System.Windows.Forms.GroupBox();
             this.HourPriceLabel = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.OKButton = new System.Windows.Forms.Button();
             this.CancelAddButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel2.SuspendLayout();
             this.HourlyWageGroupBox.SuspendLayout();
             this.MonthlyWageGroupBox.SuspendLayout();
@@ -89,7 +91,7 @@
             this.HourlyWageGroupBox.MinimumSize = new System.Drawing.Size(0, 70);
             this.HourlyWageGroupBox.Name = "HourlyWageGroupBox";
             this.HourlyWageGroupBox.Size = new System.Drawing.Size(223, 191);
-            this.HourlyWageGroupBox.TabIndex = 19;
+            this.HourlyWageGroupBox.TabIndex = 0;
             this.HourlyWageGroupBox.TabStop = false;
             this.HourlyWageGroupBox.Text = "Hourly Wage";
             // 
@@ -107,7 +109,8 @@
             this.HourPriceTextBox.Location = new System.Drawing.Point(91, 16);
             this.HourPriceTextBox.Name = "HourPriceTextBox";
             this.HourPriceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.HourPriceTextBox.TabIndex = 13;
+            this.HourPriceTextBox.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.HourPriceTextBox, "[0; 1000]");
             // 
             // HoursWorkedLabel
             // 
@@ -123,7 +126,8 @@
             this.HoursWorkedTextBox.Location = new System.Drawing.Point(91, 42);
             this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
             this.HoursWorkedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.HoursWorkedTextBox.TabIndex = 14;
+            this.HoursWorkedTextBox.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.HoursWorkedTextBox, "[80; 300]");
             // 
             // MonthlyWageGroupBox
             // 
@@ -137,7 +141,7 @@
             this.MonthlyWageGroupBox.Location = new System.Drawing.Point(232, 3);
             this.MonthlyWageGroupBox.Name = "MonthlyWageGroupBox";
             this.MonthlyWageGroupBox.Size = new System.Drawing.Size(224, 191);
-            this.MonthlyWageGroupBox.TabIndex = 20;
+            this.MonthlyWageGroupBox.TabIndex = 0;
             this.MonthlyWageGroupBox.TabStop = false;
             this.MonthlyWageGroupBox.Text = "Monthly Wage";
             // 
@@ -164,7 +168,8 @@
             this.BountyTextBox.Location = new System.Drawing.Point(98, 71);
             this.BountyTextBox.Name = "BountyTextBox";
             this.BountyTextBox.Size = new System.Drawing.Size(100, 20);
-            this.BountyTextBox.TabIndex = 17;
+            this.BountyTextBox.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.BountyTextBox, "[0; 50000]");
             // 
             // BountyCheckBox
             // 
@@ -172,7 +177,7 @@
             this.BountyCheckBox.Location = new System.Drawing.Point(6, 73);
             this.BountyCheckBox.Name = "BountyCheckBox";
             this.BountyCheckBox.Size = new System.Drawing.Size(59, 17);
-            this.BountyCheckBox.TabIndex = 18;
+            this.BountyCheckBox.TabIndex = 10;
             this.BountyCheckBox.Text = "Bounty";
             this.BountyCheckBox.UseVisualStyleBackColor = true;
             this.BountyCheckBox.CheckedChanged += new System.EventHandler(this.BountyCheckBox_CheckedChanged);
@@ -182,14 +187,16 @@
             this.RateTextBox.Location = new System.Drawing.Point(98, 45);
             this.RateTextBox.Name = "RateTextBox";
             this.RateTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RateTextBox.TabIndex = 16;
+            this.RateTextBox.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.RateTextBox, "[0; 2.5]");
             // 
             // RewardTextBox
             // 
             this.RewardTextBox.Location = new System.Drawing.Point(98, 19);
             this.RewardTextBox.Name = "RewardTextBox";
             this.RewardTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RewardTextBox.TabIndex = 15;
+            this.RewardTextBox.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.RewardTextBox, "[7500; 150000]");
             // 
             // groupBox1
             // 
@@ -200,7 +207,7 @@
             this.groupBox1.MinimumSize = new System.Drawing.Size(0, 40);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(459, 40);
-            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wage type";
             // 
@@ -239,7 +246,7 @@
             this.groupBox2.MinimumSize = new System.Drawing.Size(0, 40);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(459, 40);
-            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Employee";
             // 
@@ -298,7 +305,7 @@
             this.OKButton.Location = new System.Drawing.Point(236, 3);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(110, 25);
-            this.OKButton.TabIndex = 11;
+            this.OKButton.TabIndex = 12;
             this.OKButton.Text = "OK";
             this.OKButton.UseVisualStyleBackColor = true;
             this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
@@ -308,7 +315,7 @@
             this.CancelAddButton.Location = new System.Drawing.Point(352, 3);
             this.CancelAddButton.Name = "CancelAddButton";
             this.CancelAddButton.Size = new System.Drawing.Size(110, 25);
-            this.CancelAddButton.TabIndex = 12;
+            this.CancelAddButton.TabIndex = 13;
             this.CancelAddButton.Text = "Cancel";
             this.CancelAddButton.UseVisualStyleBackColor = true;
             this.CancelAddButton.Click += new System.EventHandler(this.CancelButton_Click);
@@ -322,7 +329,15 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 257);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(465, 32);
-            this.flowLayoutPanel1.TabIndex = 22;
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 1;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Подсказка";
             // 
             // AddForm
             // 
@@ -376,6 +391,7 @@
         private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.Button CancelAddButton;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ToolTip toolTip1;
 
     }
 }
