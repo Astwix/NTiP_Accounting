@@ -26,3 +26,5 @@ D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWi
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.MainForm.resources
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.Properties.Resources.resources
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.csproj.GenerateResource.Cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.SalaryControl.resources
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Debug\SalaryWindowsFormsView.AddSalaryForm.resources

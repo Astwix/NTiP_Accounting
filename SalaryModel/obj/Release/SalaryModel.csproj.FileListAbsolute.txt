@@ -1,0 +1,5 @@
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\bin\Release\SalaryModel.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\bin\Release\SalaryModel.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\obj\Release\SalaryModel.csprojResolveAssemblyReference.cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\obj\Release\SalaryModel.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\obj\Release\SalaryModel.pdb

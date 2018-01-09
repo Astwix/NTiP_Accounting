@@ -5,6 +5,5 @@ D:\University\7\NTiP\lab1\Salary\SalaryModel\obj\Debug\SalaryModel.dll
 D:\University\7\NTiP\lab1\Salary\SalaryModel\obj\Debug\SalaryModel.pdb
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\bin\Debug\SalaryModel.dll
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\bin\Debug\SalaryModel.pdb
-D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\obj\Debug\SalaryModel.csprojResolveAssemblyReference.cache
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\obj\Debug\SalaryModel.dll
 D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryModel\obj\Debug\SalaryModel.pdb

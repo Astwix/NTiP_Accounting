@@ -34,12 +34,12 @@ namespace SalaryWindowsFormsView
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            AddForm form1 = new AddForm();
-            form1.ShowDialog();
-            if (form1.newStaff != null)
+            AddSalaryForm addSalaryForm = new AddSalaryForm();
+            addSalaryForm.ShowDialog();
+            if (addSalaryForm.newStaff != null)
             {
-                StaffList.Add(form1.newStaff);
-                EmployeesGridView.Rows.Add(form1.newStaff.Firstname, form1.newStaff.Surname, form1.newStaff.GetSalaryValue());
+                StaffList.Add(addSalaryForm.newStaff);
+                EmployeesGridView.Rows.Add(addSalaryForm.newStaff.Firstname, addSalaryForm.newStaff.Surname, addSalaryForm.newStaff.GetSalaryValue());
             }
         }
 
@@ -67,30 +67,30 @@ namespace SalaryWindowsFormsView
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Stream myStream = null; 
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            Stream fileStream = null; 
+            OpenFileDialog openSalaryFileDialog = new OpenFileDialog();
 
-            openFileDialog1.InitialDirectory = "c:\\"; 
-            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*"; 
-            openFileDialog1.FilterIndex = 2; 
-            openFileDialog1.RestoreDirectory = true; 
+            openSalaryFileDialog.InitialDirectory = "c:\\"; 
+            openSalaryFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*"; 
+            openSalaryFileDialog.FilterIndex = 2; 
+            openSalaryFileDialog.RestoreDirectory = true; 
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK) 
+            if (openSalaryFileDialog.ShowDialog() == DialogResult.OK) 
             { 
                 try 
                 { 
-                    if ((myStream = openFileDialog1.OpenFile()) != null) 
+                    if ((fileStream = openSalaryFileDialog.OpenFile()) != null) 
                     { 
-                        using (myStream) 
+                        using (fileStream) 
                         { 
                             var settings = new JsonSerializerSettings 
                             { 
                                 TypeNameHandling = TypeNameHandling.All 
                             }; 
-                            StreamReader sr = new StreamReader(myStream);
+                            StreamReader sr = new StreamReader(fileStream);
                             StaffList = JsonConvert.DeserializeObject<List<SalaryModel.SalaryTypes.StaffSalary>>(sr.ReadLine(), settings); 
                             sr.Close(); 
-                            myStream.Close();
+                            fileStream.Close();
                             EmployeesGridView.Rows.Clear();
                             foreach (SalaryModel.SalaryTypes.StaffSalary staff in StaffList) 
                             {
@@ -142,7 +142,7 @@ namespace SalaryWindowsFormsView
 
             if (rnd.Next(0, 2) == 1)
             {
-                staff = new SalaryModel.SalaryTypes.HourlyWage(name, surname, rnd.Next(1, 300), rnd.Next(1, 200));
+                staff = new SalaryModel.SalaryTypes.HourlyWage(name, surname, rnd.Next(1, 300), rnd.Next(80, 200));
             }
             else
             {
@@ -155,6 +155,39 @@ namespace SalaryWindowsFormsView
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            SalaryModel.SalaryTypes.StaffSalary selectedStaff = null;
+            try
+            {
+                foreach (SalaryModel.SalaryTypes.StaffSalary staff in StaffList)
+                {
+                    if (staff.Firstname == EmployeesGridView.CurrentRow.Cells[0].Value.ToString()
+                        && staff.Surname == EmployeesGridView.CurrentRow.Cells[1].Value.ToString()
+                        && staff.GetSalaryValue().ToString() == EmployeesGridView.CurrentRow.Cells[2].Value.ToString())
+                    {
+                        selectedStaff = staff;
+                        break;
+                    }
+                }
+            }
+            catch (System.ArgumentNullException)
+            {
+                MessageBox.Show("Wrong");
+            }
+            if (selectedStaff != null)
+            {
+                AddSalaryForm editSalaryForm = new AddSalaryForm(selectedStaff);
+                editSalaryForm.ShowDialog();
+                if (editSalaryForm.newStaff != null)
+                {
+                    StaffList.Remove(selectedStaff);
+                    StaffList.Add(editSalaryForm.newStaff);
+                    EmployeesGridView.CurrentRow.SetValues(editSalaryForm.newStaff.Firstname, editSalaryForm.newStaff.Surname, editSalaryForm.newStaff.GetSalaryValue());
+                }
+            }
         }
     }
 }

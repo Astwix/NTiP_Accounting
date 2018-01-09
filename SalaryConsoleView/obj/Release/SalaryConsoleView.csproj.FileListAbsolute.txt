@@ -1,0 +1,8 @@
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Release\SalaryConsoleView.exe.config
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Release\SalaryConsoleView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Release\SalaryConsoleView.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Release\SalaryModel.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\bin\Release\SalaryModel.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\obj\Release\SalaryConsoleView.csprojResolveAssemblyReference.cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\obj\Release\SalaryConsoleView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryConsoleView\obj\Release\SalaryConsoleView.pdb

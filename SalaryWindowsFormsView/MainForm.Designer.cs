@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.EmployeesGroupBox = new System.Windows.Forms.GroupBox();
+            this.EmployeesGridView = new System.Windows.Forms.DataGridView();
+            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddButton = new System.Windows.Forms.Button();
             this.RemoveButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddRandomEmp = new System.Windows.Forms.Button();
-            this.EmployeesGridView = new System.Windows.Forms.DataGridView();
-            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EditButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,10 +47,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EmployeesGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeesGridView)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeesGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,77 +62,10 @@
             this.EmployeesGroupBox.Location = new System.Drawing.Point(0, 24);
             this.EmployeesGroupBox.Margin = new System.Windows.Forms.Padding(50);
             this.EmployeesGroupBox.Name = "EmployeesGroupBox";
-            this.EmployeesGroupBox.Size = new System.Drawing.Size(469, 281);
+            this.EmployeesGroupBox.Size = new System.Drawing.Size(474, 280);
             this.EmployeesGroupBox.TabIndex = 0;
             this.EmployeesGroupBox.TabStop = false;
             this.EmployeesGroupBox.Text = "Employees";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel4, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 270);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(469, 35);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel2.Controls.Add(this.AddButton);
-            this.flowLayoutPanel2.Controls.Add(this.RemoveButton);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(246, 29);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // AddButton
-            // 
-            this.AddButton.Location = new System.Drawing.Point(3, 3);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(110, 26);
-            this.AddButton.TabIndex = 1;
-            this.AddButton.Text = "Add employee";
-            this.AddButton.UseVisualStyleBackColor = true;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
-            // RemoveButton
-            // 
-            this.RemoveButton.Location = new System.Drawing.Point(119, 3);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Size = new System.Drawing.Size(110, 26);
-            this.RemoveButton.TabIndex = 2;
-            this.RemoveButton.Text = "Remove employee";
-            this.RemoveButton.UseVisualStyleBackColor = true;
-            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel4.Controls.Add(this.AddRandomEmp);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(255, 3);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(211, 29);
-            this.flowLayoutPanel4.TabIndex = 2;
-            // 
-            // AddRandomEmp
-            // 
-            this.AddRandomEmp.Location = new System.Drawing.Point(98, 3);
-            this.AddRandomEmp.Name = "AddRandomEmp";
-            this.AddRandomEmp.Size = new System.Drawing.Size(110, 25);
-            this.AddRandomEmp.TabIndex = 3;
-            this.AddRandomEmp.Text = "Add random";
-            this.AddRandomEmp.UseVisualStyleBackColor = true;
-            this.AddRandomEmp.Click += new System.EventHandler(this.AddRandomEmp_Click);
             // 
             // EmployeesGridView
             // 
@@ -146,7 +80,7 @@
             this.EmployeesGridView.Location = new System.Drawing.Point(3, 16);
             this.EmployeesGridView.Name = "EmployeesGridView";
             this.EmployeesGridView.ReadOnly = true;
-            this.EmployeesGridView.Size = new System.Drawing.Size(463, 262);
+            this.EmployeesGridView.Size = new System.Drawing.Size(468, 261);
             this.EmployeesGridView.TabIndex = 0;
             this.EmployeesGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeesGridView_CellContentClick);
             // 
@@ -169,6 +103,84 @@
             this.Salary.Name = "Salary";
             this.Salary.ReadOnly = true;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel4, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 269);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(474, 35);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowLayoutPanel2.Controls.Add(this.AddButton);
+            this.flowLayoutPanel2.Controls.Add(this.RemoveButton);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(249, 29);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // AddButton
+            // 
+            this.AddButton.Location = new System.Drawing.Point(3, 3);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(110, 25);
+            this.AddButton.TabIndex = 1;
+            this.AddButton.Text = "Add employee";
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
+            // RemoveButton
+            // 
+            this.RemoveButton.Location = new System.Drawing.Point(119, 3);
+            this.RemoveButton.Name = "RemoveButton";
+            this.RemoveButton.Size = new System.Drawing.Size(110, 25);
+            this.RemoveButton.TabIndex = 2;
+            this.RemoveButton.Text = "Remove employee";
+            this.RemoveButton.UseVisualStyleBackColor = true;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowLayoutPanel4.Controls.Add(this.AddRandomEmp);
+            this.flowLayoutPanel4.Controls.Add(this.EditButton);
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(258, 3);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(213, 29);
+            this.flowLayoutPanel4.TabIndex = 2;
+            // 
+            // AddRandomEmp
+            // 
+            this.AddRandomEmp.Location = new System.Drawing.Point(110, 3);
+            this.AddRandomEmp.Name = "AddRandomEmp";
+            this.AddRandomEmp.Size = new System.Drawing.Size(100, 25);
+            this.AddRandomEmp.TabIndex = 3;
+            this.AddRandomEmp.Text = "Add random";
+            this.AddRandomEmp.UseVisualStyleBackColor = true;
+            this.AddRandomEmp.Click += new System.EventHandler(this.AddRandomEmp_Click);
+            // 
+            // EditButton
+            // 
+            this.EditButton.Location = new System.Drawing.Point(4, 3);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(100, 25);
+            this.EditButton.TabIndex = 4;
+            this.EditButton.Text = "Edit";
+            this.EditButton.UseVisualStyleBackColor = true;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -176,7 +188,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(469, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(474, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -194,26 +206,26 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -222,7 +234,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(469, 305);
+            this.ClientSize = new System.Drawing.Size(474, 304);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.EmployeesGroupBox);
             this.Controls.Add(this.menuStrip1);
@@ -231,10 +243,10 @@
             this.Text = "Salary";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.EmployeesGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeesGridView)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeesGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -261,6 +273,7 @@
         private System.Windows.Forms.Button AddRandomEmp;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button EditButton;
     }
 }
 

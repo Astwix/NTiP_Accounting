@@ -1,0 +1,9 @@
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\bin\Release\SalaryTests.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\bin\Release\SalaryTests.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\bin\Release\nunit.framework.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\bin\Release\SalaryModel.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\bin\Release\SalaryModel.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\bin\Release\nunit.framework.xml
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\obj\Release\SalaryTests.csprojResolveAssemblyReference.cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\obj\Release\SalaryTests.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryTests\obj\Release\SalaryTests.pdb

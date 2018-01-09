@@ -38,7 +38,7 @@ namespace SalaryTests
             Assert.AreEqual(surname, staff.Surname);
         }
 
-        [TestCase(10, TestName = "Hourly Wage Set HourPrice")]
+        [TestCase(50, TestName = "Hourly Wage Set HourPrice")]
         [Test]
         public void HourlyWageHourPriceSet(double hourprice)
         {

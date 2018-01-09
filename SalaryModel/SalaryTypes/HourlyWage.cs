@@ -61,7 +61,7 @@ namespace SalaryModel.SalaryTypes
             set 
             {
                 if (!(Validator.Validator.ValidateNumber(value) 
-                    && (value >= 0) && (value <= 1000)))
+                    && (value >= 30) && (value <= 1000)))
                 {
                     throw new ArgumentException("Invalid hourPrice");
                 }

@@ -1,0 +1,16 @@
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\SalaryWindowsFormsView.exe.config
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\SalaryWindowsFormsView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\SalaryWindowsFormsView.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\Newtonsoft.Json.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\SalaryModel.dll
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\SalaryModel.pdb
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\bin\Release\Newtonsoft.Json.xml
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.csprojResolveAssemblyReference.cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.AddForm.resources
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.AddSalaryForm.resources
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.MainForm.resources
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.Properties.Resources.resources
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.SalaryControl.resources
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.csproj.GenerateResource.Cache
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.exe
+D:\COOL_HACKER\C_SHARP\NTiP_Accounting\SalaryWindowsFormsView\obj\Release\SalaryWindowsFormsView.pdb
